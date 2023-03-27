@@ -1,0 +1,38 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+.navbar p{
+    padding-top: 20px;
+    color: #FF725E;
+    font-weight: 900;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+    
+    
+}
+
+.navbar ul li {
+    padding-left: 80px;
+    cursor: pointer;
+    
+}
+
+.navbar ul li:hover {
+    
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.5s;
+    
+}
