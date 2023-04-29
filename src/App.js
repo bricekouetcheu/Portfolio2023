@@ -5,12 +5,12 @@ import Introduction from './Components/Introduction';
 
 function App() {
   return (
-    <>
+    <div className='app'>
     <Navbar></Navbar>
     <Introduction></Introduction>
     
 
-    </>
+    </div>
   );
 }
 
