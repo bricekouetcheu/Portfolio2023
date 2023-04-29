@@ -8,6 +8,7 @@ const Card = (props) => {
                 <span>{props.description}</span>
                 <span>{props.hours}</span>
             </div>
+            <p>{props.title}</p>
             
         </div>
     );
