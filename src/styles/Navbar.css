@@ -6,10 +6,13 @@
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
+    width: 100vw;
+    padding-right: 10%;
+    background-color: #ECF0F3;
 }
 .navbar p{
     padding-top: 20px;
-    color: #FF725E;
+    color: #2D5C8A;
     font-weight: 900;
     font-size: 35px;
     cursor: pointer;
@@ -62,19 +65,13 @@
 
 @media screen and (max-width: 768px) {
     .navbar{
-        position: fixed;
-        top: 15px;
-        left: 25px;
         display: flex;
-        justify-content: space-between;
-
-       /* display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 100px;
         padding-left: 30px;
         padding-right: 30px;
-        align-items: center;*/
+        align-items: center;
     }
     
         
@@ -113,11 +110,11 @@
 
     .mobile-menu-icon{
         display : block;
-       /* position: fixed;
+        position: fixed;
         top: 35px;
         right: 25px;
         border: none;
-        cursor: pointer;*/
+        cursor: pointer;
     }
 
  

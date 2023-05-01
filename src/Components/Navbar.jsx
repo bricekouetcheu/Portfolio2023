@@ -18,9 +18,9 @@ const Navbar = () => {
             </ul>
 
             <button className='mobile-menu-icon' onClick={()=>setIsmobile(!ismobile)}>
-                {ismobile ? (<FontAwesomeIcon icon={faXmark} color='#FF725E' fontSize='35px' />)
+                {ismobile ? (<FontAwesomeIcon icon={faXmark} color='#456D98' fontSize='35px' />)
                  : 
-                 (<FontAwesomeIcon icon={faBars}  color='#FF725E' fontSize='35px' />)  }
+                 (<FontAwesomeIcon icon={faBars}  color='#456D98' fontSize='35px' />)  }
             </button>
 
             
