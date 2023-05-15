@@ -6,6 +6,7 @@ import Card from './Components/Card';
 import Portfolio from './Components/Portfolio';
 import New from './Components/New';
 import Skill from './Components/Skill';
+import Footer from './Components/Footer';
 function App() {
   return (
     <div className='app'>
@@ -15,6 +16,7 @@ function App() {
     <Introduction></Introduction>
     <Portfolio></Portfolio>
     <Skill></Skill>
+    <Footer></Footer>
     
 
     </div>

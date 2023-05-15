@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import illustration from '../assets/illustration.svg'
 import brice from '../assets/brice3.png';
+import { BsDownload } from "react-icons/bs";
+import cv from '../assets/cv.pdf'
+
 const Introduction = () => {
    
 
@@ -17,7 +20,7 @@ const Introduction = () => {
                 <p>
                     jeune etudiant passioné par l'informatique et acutellement en dernière année bachelier option technologies de l'informatique. J'aime aussi beaucoup le cinema et les jeux videos.<br></br>
                     <br></br><br></br>
-                    <button className="contact" >Mon cv </button>
+                    <a href={cv}> <button className="contact" > <BsDownload> </BsDownload> Mon cv  </button></a>
 
 
                 </p>

@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    background-color: #2D5C8A;
+    gap: 8px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+
+
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 5%;
+
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+.footer p{
+    color: #fff;
+}

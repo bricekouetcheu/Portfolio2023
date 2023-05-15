@@ -25,3 +25,10 @@
 .skill-content img{
     width: 12%;
 }
+
+
+.skill-content img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+  
+  }
