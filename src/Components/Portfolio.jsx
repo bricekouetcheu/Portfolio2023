@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import javascript from '../assets/javascript.png'
 import javascript1 from '../assets/javascript1.png'
@@ -10,13 +10,29 @@ import devops from '../assets/devops.jpg'
 import devops2 from '../assets/devops2.png'
 import devops3 from '../assets/devops3.png'
 import student from '../assets/student.jpg'
+import student1 from '../assets/student1.png'
+import student2 from '../assets/student2.png'
 import conference from '../assets/conferences.jpg'
 import conference1 from '../assets/conference1.png'
 import conference2 from '../assets/conference2.png'
 import conference3 from '../assets/conference3.png'
 import conference4 from '../assets/conference4.png'
+import Summary from './Summary';
 
 const Portfolio = () => {
+
+  const [openModal, setOpenModal]= useState(false)
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+
+
     const card1Description ='Apprendre a Programmer en javascript'
     const card2Description ='Formation Apprendre a Programmer en Python'
     const card3Description ='Formation Developpement full stack'
@@ -53,8 +69,8 @@ const Portfolio = () => {
       ]
 
       const image5 = [
-        { url: javascript, title: "beach" },
-        { url: python, title: "boat" },
+        { url: student1, title: "beach" },
+        { url: student2, title: "boat" },
        
       ]
 
@@ -76,11 +92,15 @@ const Portfolio = () => {
                 <Card img={python}title = {card2Description} description = 'dev applicatif' hours = '12h' slides={image2} explanation = {explanation2}></Card> 
                 <Card img={node} title = {card3Description} description = 'dev fullstack' hours = '12h' slides={image3} explanation = {explanation3}></Card> 
                 <Card img = {devops} title = {card4Description} description = 'DevOps' hours = '14h' slides={image4} explanation = {explanation4}></Card> 
-                <Card img={student} title = {card5Description} description = 'Job etudiant' hours = '>100h' explanation = {explanation5}></Card> 
+                <Card img={student} title = {card5Description} description = 'Job etudiant' hours = '>100h'slides={image5} explanation = {explanation5}></Card> 
                 <Card img = {conference} title= {card6Description} slides = {image6} description = 'Conferences' hours = '>15h' explanation = {explanation6}></Card> 
             </div>
 
-            <button className='summary-btn'>Hours summary</button>
+            <button className='summary-btn' onClick={handleOpenModal}>Tableau recapitulatif</button>
+            {openModal && (
+        // eslint-disable-next-line react/jsx-pascal-case
+        <Summary  onCloseModal={handleCloseModal}/>
+      )}
 
             
         </div>

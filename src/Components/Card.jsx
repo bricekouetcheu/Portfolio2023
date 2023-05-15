@@ -1,7 +1,7 @@
 import React from 'react';
 import javascript from '../assets/javascript.png'
 import { useState } from 'react';
-import Modal from './Modal';
+
 import Modal_test from './Modal_test';
 import python from '../assets/python.png'
 import node from '../assets/node-express-mongo.png'

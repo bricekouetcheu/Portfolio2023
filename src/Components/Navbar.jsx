@@ -9,19 +9,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <p >Portfolio</p>
-            <ul className={ismobile? 'nav-links-mobile' : 'nav-links' } 
-            onClick={()=>{setIsmobile(false)}}>
-                <li className='nav-menu'>Home</li>
-                <li className='nav-menu'>Skills</li>
-                <li className='nav-menu'>Resume</li>
-                <li className='nav-menu'>Contact</li>
-            </ul>
-
-            <button className='mobile-menu-icon' onClick={()=>setIsmobile(!ismobile)}>
-                {ismobile ? (<FontAwesomeIcon icon={faXmark} color='#456D98' fontSize='35px' />)
-                 : 
-                 (<FontAwesomeIcon icon={faBars}  color='#456D98' fontSize='35px' />)  }
-            </button>
+           
 
             
 

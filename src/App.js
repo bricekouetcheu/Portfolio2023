@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Introduction from './Components/Introduction';
 import Card from './Components/Card';
 import Portfolio from './Components/Portfolio';
-import New from './Components/New';
+
 import Skill from './Components/Skill';
 import Footer from './Components/Footer';
 function App() {
