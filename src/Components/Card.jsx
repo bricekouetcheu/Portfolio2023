@@ -7,7 +7,7 @@ import python from '../assets/python.png'
 import node from '../assets/node-express-mongo.png'
 import devops from '../assets/devops.jpg'
 
-const Card = (props , images) => {
+const Card = (props) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
@@ -33,15 +33,15 @@ const Card = (props , images) => {
 
                {isModalOpen && (
         // eslint-disable-next-line react/jsx-pascal-case
-        <Modal_test slides={slides} onClose={handleCloseModal} />
+        <Modal_test slides={props.slides} onClose={handleCloseModal} explanation={props.explanation}/>
       )}
          <div className='card'>
             <img src= {props.img} alt=""/>
             <div className='card-description '>
-                <span>{props.description} bonjour</span>
-                <span>{props.hours} 50H</span>
+                <span>{props.description}</span>
+                <span>{props.hours}</span>
             </div>
-            <h3  onClick={handleOpenModal}>{props.title}</h3>
+            <h3 onClick={handleOpenModal}>{props.title}</h3>
        
         </div>
         </>

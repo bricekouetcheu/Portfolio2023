@@ -5,6 +5,7 @@ import Introduction from './Components/Introduction';
 import Card from './Components/Card';
 import Portfolio from './Components/Portfolio';
 import New from './Components/New';
+import Skill from './Components/Skill';
 function App() {
   return (
     <div className='app'>
@@ -13,6 +14,7 @@ function App() {
     <Navbar></Navbar>
     <Introduction></Introduction>
     <Portfolio></Portfolio>
+    <Skill></Skill>
     
 
     </div>

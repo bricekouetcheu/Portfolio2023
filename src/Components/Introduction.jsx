@@ -17,7 +17,7 @@ const Introduction = () => {
                 <p>
                     jeune etudiant passioné par l'informatique et acutellement en dernière année bachelier option technologies de l'informatique. J'aime aussi beaucoup le cinema et les jeux videos.<br></br>
                     <br></br><br></br>
-                    <button className="contact" >Contact</button>
+                    <button className="contact" >Mon cv </button>
 
 
                 </p>

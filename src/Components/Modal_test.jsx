@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Modal_test = ({ slides,description,onClose}) => {
+const Modal_test = ({ slides,explanation,onClose}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -18,8 +18,7 @@ const Modal_test = ({ slides,description,onClose}) => {
 
   return (
     <div className="modal-className">
-         <div className="slider">
-            <div>
+        <div>
                  <div onClick={goToPrevious}  className="leftArrow">
                     ❰
                  </div>
@@ -27,6 +26,8 @@ const Modal_test = ({ slides,description,onClose}) => {
                     ❱
                  </div>
             </div>
+         <div className="slider">
+          
             <img className="slideWithBackground" src={slides[currentIndex].url} alt="" />
           
                 <div  className="dotsContainer">
@@ -45,8 +46,8 @@ const Modal_test = ({ slides,description,onClose}) => {
             </div>
 
             <div className="Modal-description">
-                <p>csbcuviocuie</p>
-                <button onClick={onClose}> FERMER</button>
+                <p>{explanation}</p>
+                <button onClick={onClose} className="close-btn"> FERMER</button>
             </div>
          
 
